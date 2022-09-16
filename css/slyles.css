@@ -649,15 +649,15 @@ textarea {
   margin-top: 20px;
 }
 
-.address__item {
+.address-item {
   margin-top: 9px;
 }
 
-.address__item:first-child {
+.address-item:first-child {
   margin-top: 0;
 }
 
-.address__link {
+.address-link {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
@@ -667,12 +667,12 @@ textarea {
   transition: color var(--time) var(--timing-function);
 }
 
-.address__link:hover,
-.address__link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
-.address__link--street {
+.address-link-street {
   color: var(--primary-white-color);
 }
 
