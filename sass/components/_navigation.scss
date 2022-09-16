@@ -1,11 +1,9 @@
 .nav__list {
     display: flex;
     margin-left: 90px;
+    gap: 50px;
   }
   
-  .nav__item:not(:last-child) {
-    margin-right: 50px;
-  }
   .nav__link {
     position: relative;
     display: block;
@@ -18,19 +16,15 @@
     letter-spacing: 0.02em;
   
     transition: color var(--time) var(--timing-function);
- 
-  &:hover,
-  &:focus {
+  
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
-   }
+  }
 
   .nav__link--current {
     color: var(--accent-color);
-
-    &::after {
-      opacity: 1;
-    }
   }
   
   .nav__link::after {
@@ -48,11 +42,11 @@
     opacity: 0;
   
     transition: opacity var(--time) var(--timing-function);
-  
-  
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
+ }
 
-  }
+ 
+  .nav__link:hover::after,
+  .nav__link:focus::after,
+  .nav__link--current::after {
+    opacity: 1;
+  } 

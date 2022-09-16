@@ -42,25 +42,22 @@
     cursor: pointer;
   
     transition: border var(--time) var(--timing-function);
-  }
-  
-  .form-icon {
-    transition: fill var(--time) var(--timing-function);
-  }
-  
-  .form-input:focus,
-  .form-message:focus {
-    border: 1px solid var(--accent-color);
-  }
-  
-  .form-input:focus + .form-icon {
-    fill: var(--accent-color);
+
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
+    
   }
   
   .form-icon {
     position: absolute;
     bottom: 11px;
     left: 12px;
+    transition: fill var(--time) var(--timing-function);
+    
+    .form-input:focus + & {
+    fill: var(--accent-color);
+  }
   }
   
   .form-message {
@@ -77,16 +74,20 @@
     resize: none;
   
     transition: border var(--time) var(--timing-function);
-  }
-  
-  .form-message::placeholder {
+ 
+  &::placeholder {
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.01em;
   
     color: rgba(117, 117, 117, 0.5);
   }
-  
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+   }
+
   .form-agreement {
     display: flex;
     align-items: center;
@@ -122,21 +123,22 @@
   
   .form-icon-unchecked {
     transition: opacity var(--time) var(--timing-function);
-  }
-  .form-checkbox:checked + .form-checkbox-icon .form-icon-unchecked {
+  
+  .form-checkbox:checked + .form-checkbox-icon & {
     opacity: 0;
   }
-  
+  }
+
+
   .form-icon-checked {
     opacity: 0;
-  
     transition: opacity var(--time) var(--timing-function);
-  }
-  
-  .form-checkbox:checked + .form-checkbox-icon .form-icon-checked {
+ 
+  .form-checkbox:checked + .form-checkbox-icon & {
     opacity: 1;
   }
-  
+   }
+
   .form-btn {
     display: block;
     min-width: 200px;

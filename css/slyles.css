@@ -58,11 +58,11 @@ textarea {
   outline: transparent;
 } */
 
-.section {
+/* .section {
   padding: 94px 0;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -74,7 +74,7 @@ textarea {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /* .container {
   width: 1200px;
@@ -241,7 +241,7 @@ textarea {
 
 /* Feature */
 
-.feature__list {
+/* .feature__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -276,11 +276,11 @@ textarea {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Work */
 
-.work {
+/* .work {
   padding-top: 0;
 }
 
@@ -322,10 +322,10 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
+} */
 
 /* Team */
-.team {
+/* .team {
   background-color: var(--section-bg-color);
 }
 
@@ -370,10 +370,10 @@ textarea {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Socials */
-.socials {
+/* .socials {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -414,11 +414,11 @@ textarea {
 
 .socials__icon {
   fill: currentColor;
-}
+} */
 
 /* Clients */
 
-.clients__title {
+/* .clients__title {
   margin-bottom: 50px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -463,10 +463,10 @@ textarea {
 .clients__link:hover .clients__icon,
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
-}
+} */
 
 /* Portfolio-nav */
-.portfolio {
+/* .portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -475,10 +475,10 @@ textarea {
 
 .portfolio .item + .item {
   margin-left: 8px;
-}
+} */
 
 /* Project */
-.projects {
+/* .projects {
   display: flex;
   flex-wrap: wrap;
 }
@@ -559,7 +559,7 @@ textarea {
   border: 1px solid var(--section-bg2-color);
   border-top: none;
   padding: 20px 24px;
-}
+} */
 
 /* Button */
 /* .btn-first {
@@ -621,7 +621,7 @@ textarea {
 
 /* Footer */
 
-.footer {
+/* .footer {
   background-color: var(--primary-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -640,10 +640,10 @@ textarea {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-}
+} */
 
 /* Address */
-.address {
+/* .address {
   margin-top: 20px;
 }
 
@@ -672,7 +672,7 @@ textarea {
 
 .address-link-street {
   color: var(--primary-white-color);
-}
+} */
 
 /* Mailing Form */
 /* .mailing-form {
@@ -784,11 +784,9 @@ textarea {
   border-radius: 50%;
   background-color: var(--primary-white-color);
   border: 1px solid var(--border-color);
-}
+} */
 
-.modal.icon {
-  cursor: pointer;
-
+/* .modal.icon {
   transition: fill var(--time) var(--timing-function);
 }
 .modal-btn:hover .modal-icon {
