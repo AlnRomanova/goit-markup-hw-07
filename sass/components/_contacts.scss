@@ -22,21 +22,19 @@
     color: var(--primary-text-color);
   
     transition: color var(--time) var(--timing-function);
-  }
   
   &:hover,
   &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
   }
-  
+}
   .contacts__icon {
     fill: currentColor;
     transition: fill var(--time) var(--timing-function);
-  }
-  
-  .contacts__link:hover .contacts__icon,
-  .contacts__link:focus .contacts__icon {
+ 
+  .contacts__link:hover &,
+  .contacts__link:focus & {
     fill: var(--accent-color);
   }
-  
+   }
