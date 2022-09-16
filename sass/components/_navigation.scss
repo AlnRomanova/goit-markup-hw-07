@@ -25,6 +25,11 @@
 
   .nav__link--current {
     color: var(--accent-color);
+
+    &::after {
+      opacity: 1;
+    } 
+
   }
   
   .nav__link::after {
@@ -42,11 +47,9 @@
     opacity: 0;
   
     transition: opacity var(--time) var(--timing-function);
- }
-
  
-  .nav__link:hover::after,
-  .nav__link:focus::after,
-  .nav__link--current::after {
+   &:hover::after,
+   &:focus::after {
     opacity: 1;
   } 
+}
